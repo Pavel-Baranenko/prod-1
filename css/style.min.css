@@ -2718,6 +2718,7 @@ a:hover {
     align-items: center;
     margin-left: auto;
     position: relative;
+    cursor: pointer;
 }
 
 .checked {
@@ -2738,7 +2739,7 @@ a:hover {
     max-width: 210px;
 }
 
-.header__call-inner:hover+.header__call-bottom {
+.header__call:hover .header__call-bottom {
     padding: 10px 10px 0 10px;
     display: flex;
     background-color: #fff;
@@ -2747,6 +2748,16 @@ a:hover {
     border-bottom-right-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* .header__call-inner:hover+.header__call-bottom {
+    padding: 10px 10px 0 10px;
+    display: flex;
+    background-color: #fff;
+    cursor: pointer;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+} */
 
 .header__call-bottom {
     padding-top: 10px;
@@ -2763,6 +2774,7 @@ a:hover {
 .header__call-inner {
     padding: 10px 43px 8px 43px;
     max-width: 205px;
+
 }
 
 
