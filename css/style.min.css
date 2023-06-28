@@ -2700,7 +2700,7 @@ a:hover {
 }
 
 .header__call-link {
-    padding-bottom: 7px;
+    padding-bottom: 10px;
     white-space: nowrap;
     position: relative;
 }
