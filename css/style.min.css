@@ -551,7 +551,7 @@ a:hover {
     display: block;
     width: 1.0625em;
     height: 1.0625em;
-    background-image: url(../img/favourite.svg);
+    background-image: url(../img/favourite-grey-2.svg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -576,7 +576,7 @@ a:hover {
     display: block;
     width: 1.0625em;
     height: 1.0625em;
-    background-image: url(../img/comparsion-grey.svg);
+    background-image: url(../img/comparsion-grey-2.svg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -1644,15 +1644,16 @@ a:hover {
     }
 
     .breadcrumbs__item:not(:first-child) {
-        margin-left: 2em
+        margin-left: 52px;
     }
 
     .breadcrumbs__item:not(:first-child):before {
         width: 1em;
         height: 1em;
         top: .2em;
-        margin-right: .66em
+        margin-right: 20px;
     }
+
 }
 
 /* .catalog-card2__nav {
@@ -2711,6 +2712,7 @@ a:hover {
 
 .header__call-link::before {
     left: -26px;
+    top: -1px;
     width: 18px;
     height: 18px;
     content: "";
@@ -9371,8 +9373,18 @@ a:hover {
     gap: 0 10px;
     align-items: center;
     position: relative;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
 }
 
+.comparsion__link {}
+
+.comparsion__link.active {
+    text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+
+}
 
 .comparsion__link.active::after {
     display: block;
@@ -10233,6 +10245,10 @@ input:checked+.slider:before {
     .catalog-card__bottom {
         gap: 2px;
     }
+
+    .comparsion__link.active::after {
+        width: 60%;
+    }
 }
 
 @media (min-width: 1244px) {
@@ -10244,5 +10260,40 @@ input:checked+.slider:before {
         white-space: nowrap;
     }
 }
+
+.comparsion-swipe {
+    display: none;
+}
+
+@media (max-width: 400px) {
+
+    /* .comparsion__link:last-child {
+        display: none;
+    } */
+    .comparsion__links {
+        display: none;
+    }
+
+    .comparsion-swipe {
+        display: block;
+    }
+}
+
+.comparsion-slide {
+    width: 50%;
+}
+
+.comparsion-swiper {
+    padding-bottom: 0;
+    margin-bottom: 11px;
+}
+
+.comparsion-swiper {
+    border-bottom: 1px solid #DDD;
+}
+
+/* .comparsion-swipe {
+    border-bottom: 1px solid #DDD;
+} */
 
 /*# sourceMappingURL=../sourcemaps/style.min.css.map */
