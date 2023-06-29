@@ -10184,6 +10184,14 @@ input:checked+.slider:before {
         font-size: 16px;
 
     }
+
+    .favourite-btn__icon {
+        background-image: url(../img/fav_mob.svg);
+    }
+
+    .comparsion-btn__icon {
+        background-image: url(../img/comp_mob.svg);
+    }
 }
 
 @media (max-width:430px) {
