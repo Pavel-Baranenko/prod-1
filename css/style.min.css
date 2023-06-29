@@ -10285,11 +10285,12 @@ input:checked+.slider:before {
 
 .comparsion-swiper {
     padding-bottom: 0;
-    margin-bottom: 11px;
+    margin-bottom: 0;
 }
 
-.comparsion-swiper {
+.comparsion-swipe {
     border-bottom: 1px solid #DDD;
+    margin-bottom: 11px;
 }
 
 /* .comparsion-swipe {
